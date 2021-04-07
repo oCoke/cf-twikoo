@@ -1,0 +1,15 @@
+{
+  "name": "cf-twikoo",
+  "version": "1.0.0",
+  "description": "基于 Cloudflare Workers 的 Twikoo 中间件。",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-minify-css": "^1.2.4",
+    "gulp-terser": "^2.0.1"
+  }
+}
