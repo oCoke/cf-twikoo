@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: install&gulp
+    - name: Install & Gulp
       run: |
         npm i gulp gulp-terser gulp-minify-css -D && npx gulp
         gulp 
@@ -26,8 +26,5 @@ jobs:
         git commit -m ":zap: Successful minify" -a
         
     - name: Push
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.token }}
-        force: true
-        branch: main
+      run: |
+        git push origin main -f
